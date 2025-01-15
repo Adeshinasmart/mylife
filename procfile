@@ -1,0 +1,2 @@
+web: gunicorn journey.wsgi --log-file
+web: python manage.py migrate && gunicorn journey.wsg
